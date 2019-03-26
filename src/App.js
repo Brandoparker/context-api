@@ -16,7 +16,7 @@ const App = () => (
         <Route
           exact
           path="/"
-          render={ () => <div>Home</div> }
+          render={ () => <div>Context App</div> }
         />
         <Route
           exact

@@ -19,16 +19,23 @@ class AccountForm extends React.Component {
   }
   
   render() {
-    const { username, membershipLevel, email } = this.state;
+    const { firstName, lastName, membershipLevel, email } = this.state;
     return (
       <Form onSubmit={this.handleSubmit}>
         <Form.Input
-          label="New Username"
+          label="New First Name"
           type="text"
-          name="username"
-          value={username}
+          name="firstName"
+          value={firstName}
           onChange={this.handleChange}
         />
+        <Form.Input
+          label="New Last Name"
+          type="text"
+          name="lastName"
+          value={lastName}
+          onChange={this.handleChange}
+          />
         <Form.Select
           label="Membership Level"
           name="membershipLevel"

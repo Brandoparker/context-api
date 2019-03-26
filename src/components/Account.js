@@ -7,9 +7,10 @@ const Account = () => (
     { value => (
       <Card>
         <Card.Content>
-          <Card.Header>{ value.username }</Card.Header>
+          { value.firstName } { value.lastName }
+          
           <Card.Meta>
-            Date Joined: { value.dateJoined }
+            <p>Date Joined: { value.dateJoined }</p>
           </Card.Meta>
         </Card.Content>
         <Card.Content>
